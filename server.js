@@ -9,6 +9,9 @@ app.get('/', (req, res)=> {
     res.send('welcome from aws server');
 })
 
+app.get('/testobj', (req, res)=> {
+    res.json({name: "bond", fullname: 'James Bond'})
+})
 app.listen(port, ()=> {
     console.log(`server runnning at ${port} `)
 })
